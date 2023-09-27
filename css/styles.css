@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Outfit', sans-serif;
+}
+
+img {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+main {
+	display: grid;
+	place-content: center;
+	color:white;
+	width: 100vw;
+	height: 100vh;
+	background-color: hsl(217, 54%, 11%);
+	padding: 1rem;
+}
+
+.card {
+	font-size: 18px;
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	border-radius: 1rem;
+	width: 100%;
+	padding: 1.5rem;
+	background-color: hsl(216, 50%, 16%);
+}
+
+.card img {
+	position: relative;
+	width: 100%;
+	border-radius: .5rem;
+	padding-bottom: 1.5rem;
+}
+
+/* Equilibrium... */
+.card li:first-child {
+	font-weight: 600;
+	font-size: 1.3em;
+	letter-spacing: .08em;
+	padding-bottom: 1rem;
+}
+
+/* Our... */
+.card li:nth-child(2) {
+	line-height: 2rem;
+	color: hsl(215, 21%, 59%);
+	padding-bottom: 1rem;
+}
+
+/* 0.041... */
+.card li:nth-child(3) {
+	display: grid;
+	grid-template-columns: 1.5rem 6rem 1fr;
+	color: hsl(178, 100%, 50%);
+	font-weight: 600;
+}
+
+/* 3 days... */
+.card li:nth-child(3) span {
+	color: hsl(215, 21%, 59%);
+	text-align: right;
+}
+
+.card li:nth-child(3) img {
+	width: .8rem;
+	margin-right: .5rem;
+}
+
+hr {
+	border-color: hsl(215, 51%, 70%);
+	margin-bottom: 1em;
+}
+
+/* Creation... */
+.card li:nth-child(5) {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	color: hsl(215, 21%, 59%);
+}
+
+/* Juels... */
+.card li:nth-child(5) span {
+	color: white;
+}
+
+.card li:nth-child(5) img {
+	width: 30px;
+	margin-right: 1rem;
+	padding-bottom: 0;
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+.attribution {
+	padding-top: 1rem;
+	text-align: center;
+	font-size: 11px;
+	color: white;
+}
+
+.attribution a {
+	color: orange;
+}
