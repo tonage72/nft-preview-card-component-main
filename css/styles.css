@@ -18,6 +18,11 @@ ul {
 	list-style: none;
 }
 
+a:any-link {
+	color: white;
+	text-decoration: none;
+}
+
 main {
 	display: grid;
 	place-content: center;
@@ -36,16 +41,16 @@ main {
 	align-items: flex-start;
 	justify-content: center;
 	border-radius: 1rem;
-	width: 100%;
+	max-width: 20rem;
 	padding: 1.5rem;
 	background-color: hsl(216, 50%, 16%);
 }
 
+/* main cube image */
 .card img {
 	position: relative;
 	width: 100%;
 	border-radius: .5rem;
-	padding-bottom: 1.5rem;
 }
 
 /* Equilibrium... */
@@ -54,6 +59,7 @@ main {
 	font-size: 1.3em;
 	letter-spacing: .08em;
 	padding-bottom: 1rem;
+	padding-top: 2rem;
 }
 
 /* Our... */
@@ -66,6 +72,7 @@ main {
 /* 0.041... */
 .card li:nth-child(3) {
 	display: grid;
+	height: fit-content;
 	grid-template-columns: 1.5rem 6rem 1fr;
 	color: hsl(178, 100%, 50%);
 	font-weight: 600;
@@ -77,14 +84,23 @@ main {
 	text-align: right;
 }
 
-.card li:nth-child(3) img {
+/* diamond icon */
+.card li:nth-child(3) > img:first-child {
 	width: .8rem;
 	margin-right: .5rem;
 }
 
+/* clock icon */
+.card li:nth-child(3) span img:nth-child(1) {
+	width: 1.5rem;
+	display: inline;
+	vertical-align: top;
+}
+
 hr {
 	border-color: hsl(215, 51%, 70%);
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 
 /* Creation... */
@@ -116,5 +132,6 @@ hr {
 }
 
 .attribution a {
-	color: orange;
+	color: darkcyan;
+	text-decoration: underline;
 }
