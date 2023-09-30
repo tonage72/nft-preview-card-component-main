@@ -46,11 +46,37 @@ main {
 	background-color: hsl(216, 50%, 16%);
 }
 
+.largeImage {
+	border-radius: .6rem;
+	position: relative;
+	background-color: aquamarine;
+}
+
 /* main cube image */
-.card img {
+.cubeimage {
 	position: relative;
 	width: 100%;
 	border-radius: .5rem;
+	opacity: 100%;
+	transition: opacity 300ms ease-in-out;
+}
+
+.largeImage:hover .cubeimage {
+	opacity: 50%;
+	transition: opacity 300ms ease-in-out;
+}
+
+.eyeimage {
+	position: absolute;
+	top: 7rem;
+	left: 7rem;
+	opacity: 0;
+	transition: opacity 300ms ease-in-out;
+}
+
+.largeImage:hover .eyeimage {
+	opacity: 100;
+	transition: opacity 300ms ease-in-out;
 }
 
 /* Equilibrium... */
